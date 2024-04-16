@@ -29,3 +29,9 @@ variable "vpc_cidr" {
     error_message = "CIDR size must be at least /20 and no larger than /16"
   }
 }
+
+variable "availability_zone" {
+  description = "The AWS availability zone where the subnets will be created."
+  type        = string
+  default     = "us-west-1a"
+}

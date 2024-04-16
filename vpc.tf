@@ -21,9 +21,9 @@ module "subnets_cidr" {
   source              = "hashicorp/subnets/cidr"
   version             = "1.2.0"
   availability_zone   = var.availability_zone
-  vpc_cidr_block     = aws_vpc.main.cidr_block
-  number_of_subnets  = 2
-  netmask_length     = 24
+  vpc_cidr_block      = aws_vpc.main.cidr_block
+  number_of_subnets   = 2
+  netmask_length      = 24
   }
 
   # Public Subnet
