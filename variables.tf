@@ -33,5 +33,5 @@ variable "vpc_cidr" {
 variable "availability_zone" {
   description = "The AWS availability zone where the subnets will be created."
   type        = string
-  default     = "us-west-1a"
+  default     = "us-west-1b"
 }
